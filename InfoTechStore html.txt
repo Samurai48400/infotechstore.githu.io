@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InfoTechStore</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0d1117;
+      color: #c9d1d9;
+    }
+
+    header {
+      background: #161b22;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav a {
+      color: #c9d1d9;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #58a6ff;
+      border-bottom: 2px solid #58a6ff;
+      padding-bottom: 3px;
+    }
+
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(rgba(13,17,23,0.8), rgba(22,27,34,0.95)),
+                  url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: linear-gradient(90deg,#58a6ff,#1f6feb);
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      transition: all .3s;
+    }
+    .btn:hover {
+      background: linear-gradient(90deg,#1f6feb,#58a6ff);
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      border-bottom: 2px solid #58a6ff;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #161b22;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      transition: transform 0.2s, box-shadow 0.3s;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.7);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .parcerias-logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    .parcerias-logos img {
+      height: 100px;
+      transition: transform 0.3s;
+    }
+
+    .parcerias-logos img:hover {
+      transform: scale(1.1);
+    }
+
+    .footer {
+      background: #161b22;
+      padding: 30px;
+      text-align: center;
+      border-top: 2px solid #58a6ff;
+    }
+
+    .footer a {
+      color: #58a6ff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header com logos -->
+  <header>
+    <img src="logo_infotech.jpg" alt="InfoTechStore Logo">
+    <nav>
+      <a href="#placas-video">Placas de Vídeo</a>
+      <a href="#processadores">Processadores</a>
+      <a href="#ram">Memórias RAM</a>
+      <a href="#ssds">SSDs</a>
+      <a href="#placas-mae">Placas-Mãe</a>
+      <a href="#gabinetes">Gabinetes</a>
+      <a href="#fontes">Fontes</a>
+      <a href="#perifericos">Periféricos</a>
+      <a href="#parcerias">Parcerias</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <img src="logo_apollo12.jpg" alt="Colégio Apollo 12 Logo">
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Bem-vindo à InfoTechStore</h1>
+    <p>Hardware de alta performance, periféricos modernos e parcerias de confiança.</p>
+    <a href="https://wa.me/5521964676217" class="btn">Fale no WhatsApp</a>
+  </section>
+
+  <!-- SEÇÕES DE PRODUTOS (já estão no seu código) -->
+
+  <!-- Parcerias -->
+  <section id="parcerias">
+    <h2>Parcerias</h2>
+    <p style="text-align:center;">Trabalhamos junto a parceiros de confiança que fortalecem nossa qualidade e credibilidade.</p>
+    <div class="parcerias-logos">
+      <img src="logo_infotech.jpg" alt="InfoTechStore">
+      <img src="logo_apollo12.jpg" alt="Colégio Apollo 12">
+      <!-- Aqui você pode adicionar mais logos -->
+      <!-- <img src="parceiroX.jpg" alt="Parceiro X"> -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contato">
+    <p>Entre em contato:</p>
+    <a href="https://wa.me/5521964676217">WhatsApp</a> |
+    <a href="mailto:dutralucasdutra29@gmail.com">Email</a> |
+    <a href="https://instagram.com/luca_sdutra">Instagram</a>
+  </footer>
+
+</body>
+</html>
